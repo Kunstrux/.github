@@ -128,6 +128,17 @@ List items intentionally excluded from testing or review.
 
 ---
 
+# 6. Rollback Procedure
+Document the steps to restore the last known-good state if this change causes problems. If rollback is not applicable, explain why.
+
+- [ ] Back up affected data, configuration, or state before deployment when needed, and confirm it can be restored
+- [ ] Define rollback triggers (for example, failed health checks, elevated errors, or data integrity issues)
+- [ ] Identify the rollback method, responsible owner, and any required access or dependencies
+- [ ] List the rollback steps in order, including any commands or version/configuration targets
+- [ ] Verify service health and data integrity after rollback, and communicate the outcome
+
+---
+
 # Reviewer Notes
 
 ## Areas to Focus On
